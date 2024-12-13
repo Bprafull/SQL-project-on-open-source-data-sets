@@ -41,17 +41,17 @@ Here is one of most complex queries i wrote in this project
                    director_name
          ORDER  BY number_of_movies DESC)
 
-SELECT director_id,                  -- finally, this part of query will find top 9 directors insight ranking based on highest number of movies
-       director_name,
-       number_of_movies,
-       avg_inter_movie_days,
-       avg_rating,
-       total_votes,
-       min_rating,
-       max_rating,
-       total_duration
-FROM   cte_movie_director_rating
-WHERE  rnk <= 9; 
+	SELECT director_id,                  -- finally, this part of query will find top 9 directors insight ranking based on highest number of movies
+	       director_name,
+	       number_of_movies,
+	       avg_inter_movie_days,
+	       avg_rating,
+	       total_votes,
+	       min_rating,
+	       max_rating,
+	       total_duration
+	FROM   cte_movie_director_rating
+	WHERE  rnk <= 9; 
 
 
 
